@@ -1,0 +1,44 @@
+.welcome {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+   /*  padding: 0px 30px 0 30px ; */
+    border: solid;
+
+     &_right{
+        border: solid; 
+        width: 49%;
+        height: 100%;
+        &_photo > p {
+            margin: 0;
+        }
+    }
+    &_right > p {
+        margin : 0;
+    }
+
+
+    &_left {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-self: flex-end;
+        border: solid;
+        width: 49%;
+        height: 300px;
+    } 
+    &_left > h2 {
+        margin: 0;
+        width:fit-content;
+        margin-left: 30px;
+    }
+    &_left > p {
+        margin: 0;
+        width:fit-content;
+        margin: 10px 0 10px 30px;
+    }
+
+
+  
+}
