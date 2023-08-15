@@ -1,0 +1,28 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "name": "E-commerce Website",
+        "description": "An online store for selling various products.",
+        "imgProject": "",
+        "year": 2022,
+        "techno": ["React", "Node.js", "MongoDB"]
+      },
+      {
+        "id": 2,
+        "name": "Task Management App",
+        "description": "A web application for managing tasks and to-dos.",
+        "imgProject": "",
+        "year": 2021,
+        "techno": ["Vue.js", "Firebase"]
+      },
+      {
+        "id": 3,
+        "name": "Social Media Platform",
+        "description": "A platform for users to connect and share content.",
+        "imgProject": "",
+        "year": 2020,
+        "techno": ["Angular", "Express", "PostgreSQL"]
+      }
+    ]
+  }

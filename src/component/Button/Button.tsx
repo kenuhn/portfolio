@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 interface Props {
     text: string
     classname: string
@@ -6,9 +8,12 @@ interface Props {
 const Button = ({text, classname}: Props ) => {
 
     return (
-        <button className={classname}>
-            {text}  
-        </button>
+        <Link to={`/projets`}>
+            <button className={classname}>
+                {text}  
+            </button>
+        </Link>
+      
     );
 };
 

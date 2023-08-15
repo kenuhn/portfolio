@@ -1,28 +1,68 @@
 const Timeline = () => {
+
     return (
-        <div className='timeline'>
-            <div className="timeline_separator">
-                <div className="timeline_circle circle1"></div>
-                <div className="timeline_circle circle2"></div>
-                <div className="timeline_circle circle3"></div>
-            </div>
 
-            <div className="timeline_experience1 timeline_experience">
-                <h3>Developpeur Web </h3>
-            </div>
+       
+            <section className="section_timeline">
 
-            <div className="timeline_experience2 timeline_experience" >
-                <h3>Concepteur developpeur logiciel </h3>
+           
+                <div className="section_timeline_contenant">
+                 <h3 className="section_timeline_title">Mon parcours</h3> 
 
-            </div>
+                    <ul id='timeline'>
+                        <li className="work ">
+                            <input className='radio' id='work5' name='works' type='radio'  defaultChecked={true}/>
+                            <div className='relative'>
+                                <label htmlFor='work5'>Master Dévolepement Data et IA </label>
+                                <span className='date'>2023/2025</span>
+                                <span className='circle'></span>
+                            </div>
+                            <div className='content'>
+                                <p className="content_text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                </p>
+                            </div>
+                        </li>
 
-            <div className="timeline_experience3 timeline_experience" >
-                <h3>Master Architecture logicielle option(big data) </h3>
-            </div>
-            <button className="timeline_button">Contact</button>
-        </div>
+                        <li className='work'>
+                            <input className='radio' id='work4' name='works' type='radio' />
+                            <div className='relative'>
+                                <label htmlFor='work4' >Développeur concepteur logiciel </label>
+                                <span className='date'>2022/2023</span>
+                                <span className='circle'></span>
+                            </div>
+                            <div className='content'>
+                                <p className="content_text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                </p>
+                            </div>
+                        </li>
 
-     
+                        <li className='work'>
+                            <input className='radio' id='work3' name='works' type='radio' />
+                            <div className='relative'>
+                                <label htmlFor='work3' >Développeur Web </label>
+                                <span className='date'>2021/2022</span>
+                                <span className='circle'></span>
+                            </div>
+                            <div className='content'>
+                                <p className="content_text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                </p>
+                            </div>
+                        </li>
+
+
+
+
+
+                    </ul>
+                </div>
+            </section>
+        
+
+
+
     );
 };
 

@@ -1,0 +1,106 @@
+.project{
+
+    &_wrapper {
+        position: fixed; 
+        top: 0;
+        left: 0;
+      /*   width: 100%; */
+        background-color:  white; /* Fond semi-transparent pour l'effet d'obscurcissement */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1999; 
+        border: solid black 6px;
+        
+    }
+
+       
+    &_content {
+        border-radius: 20px;
+        width: 1000px;
+     
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 15% 45% 30% 10%;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    &_header {
+        grid-area: 1 / 1 / 2 / 4;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 50px;
+    }
+    &_slider {
+
+        border-radius: 20px;
+        grid-area: 2 / 1 / 3 / 4; 
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &_body {
+        grid-area: 3 / 1 / 4 / 4;
+        display: grid;
+        grid-template-columns: 30% 20% 50%;
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        font-size: 25px;
+        &_title {
+            grid-area: 1 / 1 / 2 / 4; 
+            font-size: xx-large;
+            border-radius: 20px;
+            width: fit-content;
+        }
+        &_key{
+            grid-area: 2 / 1 / 4 / 2;
+            border-radius: 20px;
+
+            
+        }
+        &_years {
+            grid-area: 2 / 2 / 3 / 3;
+            height: fit-content;
+            margin-top: 25px;
+            border-radius: 20px;
+        }
+        &_techno {
+            margin-bottom: 30px;
+            grid-area: 3 / 2 / 4 / 3;
+           
+        }
+
+        &_description {
+            grid-area: 2 / 3 / 4 / 4;
+            font-size: large;
+            margin-top: 25px;
+            border-radius: 20px;
+
+        }
+
+      
+
+
+    }
+
+ 
+   
+
+    &_footer{
+        grid-area: 4 / 1 / 5 / 4;
+        border-radius: 20px;
+        display: flex;
+        justify-content:  flex-end;
+    }
+
+ 
+
+   
+
+
+}

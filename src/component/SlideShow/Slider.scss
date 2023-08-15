@@ -1,18 +1,37 @@
-.slider {
-    border: solid;
-}
 
+.slider_title {
+    font-size: 40px;
+    text-align: center;
+     margin: 45px 0 15px  80px; 
+}
 .card_content { 
-    border: solid;
+   border: double; 
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 450px;
+    height: 400px;
     width: 300px;
+    border-color:white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); 
+    margin-top:  25px; 
+    margin-bottom: 25px;
+    
+    
 }
-.swipper_contenant {
-    margin-top: 25px;
 
-   /*  height: 300px; */
-  
+.swipper_contenant {
+  height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.swiper_container {
+     width: 1000px; 
+     margin-top: 50px;
+     /* padding-bottom: 25px; */
 }

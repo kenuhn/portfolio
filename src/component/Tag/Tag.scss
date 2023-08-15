@@ -1,0 +1,10 @@
+.tag {
+    border-radius: 15px;
+    background-color: #fafafa;
+    width: fit-content;
+    height: fit-content;
+    padding: 0 5px 0 5px;
+    &_text {
+        font-size: 12px;
+    }
+}

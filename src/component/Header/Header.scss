@@ -1,22 +1,19 @@
 .header{
-    padding: 0 50px 0 50px;
-    border: solid;
+    width: 100%;
+    position: fixed;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    z-index: 150;
 
-    &_navbar{
-        border: solid;
+    &_contenant {
+        height: 100px;
+        width: 90%;
         display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        width: 250px;
-
+        
     }
-
-    &_navbar > li {
-        list-style: none;
-    }
-
+ 
 }

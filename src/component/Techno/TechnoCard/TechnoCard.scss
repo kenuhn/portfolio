@@ -1,0 +1,13 @@
+.techno_card {
+   /*   border: double 3px;   */
+     border-radius: 5px; 
+    height: 100%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); 
+    background-color: #f8f1e53e;
+    border-color:#f8f1e5 ;
+    transition: transform 0.3s ease; 
+}
+
+.techno_card:hover {
+    transform: scale(1.1);
+}

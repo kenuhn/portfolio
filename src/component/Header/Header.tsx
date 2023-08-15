@@ -1,16 +1,18 @@
+import Burger_button from "../Burger_button/Burger_button";
+
 const Header: React.FC = () => {
+  
   return (
-  <header className="header">
-    <h1 >Kenuhn Rimbert</h1>
-      <nav className="header_navbar">
-      
-            <li>Curriculum</li>
-            <li>Contact</li>
-    
-      </nav>
 
-
-  </header>);
+      <header className="header">
+        <div className="header_contenant">
+        <h1 >KR</h1>
+        <Burger_button />
+        </div>
+       
+      </header>
+  
+  );
 };
 
 export default Header;
