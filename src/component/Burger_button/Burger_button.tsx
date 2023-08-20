@@ -1,27 +1,33 @@
-import {useRef, useState} from "react";
-import Modal_nav from "../Modal_nav/Modal_nav";
-const Burger_button = () => {
-   const burger = useRef<HTMLDivElement >(null)
-   const [isActive, setisActive] = useState<Boolean>(false)
+import { useContext, useEffect, useState } from "react";
+import { modalContext } from "../Header/Header";
 
-   function handleClick () : void {
-    burger.current?.classList.toggle('active');
-    if(isActive === false ) {
-        setisActive(true)
-    } else {
-        setisActive(false)
+const Burger_button = () => {
+
+    const [burgerClass, setBurgerClass] = useState<string>("burger")
+    const myModal = useContext(modalContext)
+    const isOpenValue = myModal.isOpen
+
+
+    function handleClick(): void {
+        if (isOpenValue === true) {
+            myModal.setIsOpen(false)
+        } else {
+            myModal.setIsOpen(true)
+
+        }
     }
-   
-   }
+
+    useEffect(() => {
+        isOpenValue ? setBurgerClass("burger active") : setBurgerClass("burger")
+    }, [isOpenValue])
 
     return (
-       <>
-        <div ref={burger} className="burger" onClick={handleClick}>
-            <span></span>
-        </div>
-        <Modal_nav  isActive={isActive}/>
-       </>
-        
+        <>
+            <div  className={burgerClass} onClick={handleClick}>
+                <span></span>
+            </div>
+        </>
+
     );
 };
 

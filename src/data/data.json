@@ -1,28 +1,31 @@
-{
-    "projects": [
+[
       {
         "id": 1,
-        "name": "E-commerce Website",
-        "description": "An online store for selling various products.",
-        "imgProject": "",
+        "name": "Réseau social",
+        "description": "Création d'n réseau social de A à Z",
+        "imgProject": "../../src/img/project/groupomania-banner.webp",
         "year": 2022,
-        "techno": ["React", "Node.js", "MongoDB"]
+        "techno": ["React", "Node.js", "Prisma ORM"]
       },
       {
         "id": 2,
-        "name": "Task Management App",
-        "description": "A web application for managing tasks and to-dos.",
-        "imgProject": "",
-        "year": 2021,
-        "techno": ["Vue.js", "Firebase"]
+        "name": "Visualisation de données avec D3.JS",
+        "description": "Mise en place interface de visualisation de donnée avec react et D3.js",
+        "imgProject": "  ../../src/img/project/sportSee_logo.png",
+        "year": 2022,
+        "techno": ["D3.js", "React", "Docker"],
+        "listImg": ["../../src/img/project/SportSee/SportSee_Kanban.png", "../../src/img/project/SportSee/SportSee_home.png" ]
       },
+    
       {
         "id": 3,
-        "name": "Social Media Platform",
+        "name": "Interface plateforme de photographe",
         "description": "A platform for users to connect and share content.",
-        "imgProject": "",
+        "imgProject": "../../src/img/project/fishEye.png",
         "year": 2020,
-        "techno": ["Angular", "Express", "PostgreSQL"]
+        "techno": ["Angular", "Express", "PostgreSQL"],
+        "listImg": ["../../src/img/project/FishEye/FishEye_home.png", "../../src/img/project/FishEye/FishEye_list.png", "../../src/img/project/FishEye/FishEye_modal.png","../../src/img/project/FishEye/FisheEye_component.png"]
+     
+
       }
-    ]
-  }
+  ]

@@ -6,10 +6,11 @@
 @import url('../component/Button/Button.scss');
 @import url('../component/Burger_button/Burger_button.scss');
 @import url('../component/Modal_nav/Modal_nav.scss');
-@import url('../component//Modal_project/Modal_project.scss');
+@import url('../component//project/project.scss');
 @import url('../component/Tag/Tag.scss');
 @import url('../component/Techno/Techno.scss');
 @import url('../component/Techno/TechnoCard/TechnoCard.scss');
+@import url('../component/Contact/Contact.scss');
 
 @keyframes gradientAnimation {
   0% {
@@ -19,6 +20,8 @@
     background-position: 100% 50%;
   }
 }
+
+
 
 /* .css-selector {
   background: linear-gradient(37deg, #246655, #fff8ed);
@@ -52,6 +55,18 @@
 
   }
 
+
+/* #container_test {
+   height: 100vh;
+   overflow-x: hidden; 
+   overflow-y: scroll; 
+  scroll-snap-type: y mandatory;
+}
+
+.welcome, .section_timeline, .competence {
+  scroll-snap-align: start;
+  scroll-margin-bottom: 0px;
+} */
   body {
 /*      background-color: /* rgb(255, 255, 255)  white;  */
 
@@ -66,7 +81,7 @@ background-image: linear-gradient(0deg, #eef5e6 0%, #fff8ed 50%, #ffffff 100%); 
 
     /* background-color: #eef5e6; */
 
-     color: #42463d;  /*   #280a0b */
+     color:/*  #42463d */ #280a0b;  /*   #280a0b */
   }
 
   #root {
@@ -75,7 +90,9 @@ background-image: linear-gradient(0deg, #eef5e6 0%, #fff8ed 50%, #ffffff 100%); 
 
 }
 
-  
+a {
+  text-decoration: none;
+}
   .logo {
     height: 6em;
     padding: 1.5em;

@@ -1,0 +1,65 @@
+.contact {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    
+    &_title {
+        font-size: 40px;
+    }
+
+    &_left {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-end;
+        color: white;
+
+        &_title {
+            font-size: 90px;
+            margin: 0 0 30px 80px;
+        }
+    }
+    &_text {
+        width: 50%;
+        font-size: 20px;
+        width: 85%;
+        margin: 0 0 80px 80px;
+        padding: 0 20px 0 0;
+    }
+
+
+    &_content {
+        border: solid;
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        height: 550px;
+        background-color:  #1b0606;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); 
+        margin-bottom: 50px;
+    }
+    
+}
+
+.coordonnee{
+    list-style: none;
+    color: white;
+    font-size: x-large;
+    height: fit-content;
+    margin: 50px  70px 0 0 ;
+   
+}
+.coordonne_item_link {
+    color: white; 
+     font-weight: bold;
+     font-size: 20px;
+     margin: 0;
+}
+
+
+.coordonne_item {
+    font-size: medium;
+  
+}

@@ -3,7 +3,7 @@ const Timeline = () => {
     return (
 
        
-            <section className="section_timeline">
+            <section className="section_timeline" id="curriculum">
 
            
                 <div className="section_timeline_contenant">

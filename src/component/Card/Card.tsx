@@ -4,8 +4,9 @@ type Props = {
     titre: string;
     description: string;
     onClickProps: () => void;
+    id: number
 }
-const Card = ({ titre, description, onClickProps }: Props) => {
+const Card = ({ titre, description, onClickProps, id }: Props) => {
 
 
     return (
@@ -17,7 +18,7 @@ const Card = ({ titre, description, onClickProps }: Props) => {
             <h4 className="card_title">{titre}</h4>
             <p className="card_text" >{description}</p>
             <div className="card_button" onClick={onClickProps}>
-                <Button text="decouvrir" classname="button card_button" />
+                <Button text="decouvrir" classname="button card_button" id={id} />
             </div>
             
         </div>

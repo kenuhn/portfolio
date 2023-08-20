@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
- 
+import {useEffect, useState } from "react";
+ import { FaArrowRight } from "react-icons/fa6"
 const Welcome = () => {
     const [dynamicText, setDynamicText] = useState<string>("");
     const words: string[] = ["Étudiant", "Developpeur", "Fullstack"];
@@ -39,24 +39,12 @@ const Welcome = () => {
             </h2> 
             <p className="presentation_subtitle">Étudiant en M1 en Dévelopement Data et IA</p>
              <ul className="presentation_link">
-              <li className="presentation_link_item"><a href="">Mon Parcours</a></li>
-              <li className="presentation_link_item"><a href="">Mes projets</a></li>
-              <li className="presentation_link_item"><a href="">Contactez-moi</a></li>
+              <li className="presentation_link_item"><a href="#competence"> <FaArrowRight style={{marginRight: '10px', fontSize: '15px'}}/> Mon Parcours</a></li>
+              <li className="presentation_link_item"><a href="/projets"> <FaArrowRight style={{marginRight: '10px', fontSize: '15px'}}/> Mes projets</a></li>
+              <li className="presentation_link_item"><a href="contact"> <FaArrowRight style={{marginRight: '10px', fontSize: '15px'}}/> Contactez-moi</a></li>
             </ul>
  
         </div>
-{/* 
-            <div className="portrait">
-               
-                    <ul className="techno">
-                        <li className="techno_item"><img className="techno_img" src={nodeJs} alt="" /></li>
-                        <li className="techno_item"><img className="techno_img" src={typescript} alt="" /></li>
-                        <li className="techno_item"><img className="techno_img" src={python} alt="" /></li>
-                        <li className="techno_item"><img className="techno_img" src={sql} alt="" /></li>
-                        <li className="techno_item"><img className="techno_img" src={mongoDB} alt="" /></li>
-                    </ul> 
-           
-            </div> */}
 
         </section>
     );
