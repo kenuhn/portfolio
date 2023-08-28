@@ -22,12 +22,12 @@ const Slider = () => {
 
 
     return (
-        <section className="swipper_contenant" id="projects" >
+        <section className="swiper_contenant" id="projects" >
 
-            <h3 className="slider_title"> Mes projects </h3>
+            <h3 className="slider_title"> MES PROJETS </h3>
             <Swiper
                 effect={'coverflow'}
-                grabCursor={true}
+                grabCursor={false}
                 centeredSlides={true}
                 /* loop={true}  */
                 slidesPerView={'auto'}
@@ -39,7 +39,7 @@ const Slider = () => {
                 }}
                 pagination={{ el: '.swiper-pagination', clickable: true }}
                 navigation
-                initialSlide={0}
+                initialSlide={5}
                 modules={[EffectCoverflow, Pagination, Navigation]}
                 className="swiper_container">
 
@@ -47,7 +47,7 @@ const Slider = () => {
                 {projects.map((project) => {
                     return (
                         <SwiperSlide key={project.name} className="card_content" >
-                            <Card key={project.name} onClickProps={handleClick} titre={project.name} description={project.description} id={project.id} />
+                            <Card key={project.name} onClickProps={handleClick} titre={project.name} img={project.imgProject} description={project.description} id={project.id} tags={project.techno} year={project.year}/>
                         </SwiperSlide>
                     )
                 })}

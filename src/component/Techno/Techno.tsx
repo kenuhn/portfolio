@@ -1,69 +1,93 @@
 import { useEffect, useState } from "react";
 import TechnoCard from "./TechnoCard/TechnoCard";
-
-const competenceData = [
-    {
-        title: "back-end",
-        text: "Node.JS , Express.JS , Python , Firebase",
-    },
-    {
-        title: "base de donnée",
-        text: "MongoDB , Firebase , SQL , Prisma ORM",
-
-    },
-    {
-        title: "low-code",
-        text: "Flutter , Wordpress ",
-
-
-    },
-    {
-        title: "no-code",
-        text: "Goddbarber , Glide , Flutterflow",
-
-
-    },
-    {
-        title: "Front-end",
-        text: "HTML , CSS , VANILLA.JS, REACT.JS, D3.JS, BOOTSTRAP, TAILWIND, SCSS ",
-
-    },
+import {FaReact, FaNodeJs, FaWordpress, FaSass} from 'react-icons/fa'
+import {SiMysql, SiMongodb, SiFlutter, SiFirebase, SiPython, SiHtml5, SiCss3, SiTypescript} from 'react-icons/si'
+/* import useOneScreen  from "../../pages/Homepage"; */
+import { useRef } from "react";
+const competenceData = [{componnent:  <FaReact />, title: "React",},
+{componnent: <FaNodeJs />, title:"NodeJS"}, 
+{componnent: <FaWordpress />, title:"Wordpress"},
+{componnent: < SiMysql />, title:"SQL"}, 
+{componnent: <SiMongodb />, title:"MongoDB"}, 
+{componnent: <SiFlutter />, title:"Flutter"},
+{componnent: <SiFirebase />, title:"Firebase"},
+{componnent: <SiPython />, title:"Python"},
+{componnent: <SiHtml5 />, title:"HTML"},
+{componnent: <SiCss3 />, title:"CSS"},
+{componnent: <SiTypescript />, title:"Typescript"},
+{componnent:<FaSass/>, title:'SASS' }
 
 ]
+function useOneScreen(ref: React.RefObject<any>) {
+    const [isIntersecting, setIntersecting] = useState<Boolean>(false)
+
+    const observer = new IntersectionObserver(([entry]) => {
+        setIntersecting(entry.isIntersecting)
+    })
+
+    useEffect(() => {
+        observer.observe(ref.current);
+
+        return () => {
+            observer.disconnect();
+        }
+    }, [])
+
+    return isIntersecting
+
+
+}
 
 const Techno = () => {
     const [animation, setAnimation] = useState<string>("")
-    const [delay, setDelay] = useState<number>(0.5)
-/*     useEffect(() => {
-        const handleScroll = () => {
-            console.log("bb",)
-            if (animation === "") {
-                setAnimation("animated")
-            } else {
-                setAnimation("")
-            }
-        };
+    const delay = 0.5
+    const ref = useRef<HTMLDivElement>(null)
+    const isVisible = useOneScreen(ref)
+     useEffect(() => {
+
+        if (isVisible) {
+            console.log(isVisible)
+           /*  const handleScroll = () => { */
+                if (animation === "") {
+                    setAnimation("animated")
+                } 
+          /*   }; */
+        } else {
+            setAnimation("")
+        }
+    /* 
         window.addEventListener('scroll', handleScroll)
 
         return () => {
             window.removeEventListener("scroll", handleScroll);
-        };
+        }; */
 
-    }, [])
+    }, [isVisible])
 
 
- */
+ 
 
     return (
-        <div className="competence" id="competence">
-            <h4 className="competence_title">Mes Compétences</h4>
+        <div  className="competence" id="competence" ref={ref}>
+            <h4 className="competence_title">MES COMPÉTENCES</h4>
+            <p className="competence_text">
+                  Le langage que j'utilise le plus est javascript.
+                J'aime aussi développer avec Python, principalement pour travailler les structures de données et les algorithmes.
+                J'ai également eu l'occasion d'utiliser différents outils noCode tels que Wordpress ou Flutter pour certains projets.
+
+                </p>
             <div className="techno">
-                <div className="techno_content" >
-                    {competenceData.map((card, index) => {
-                        /* setDelay(delay + 0.1) */
-                        return <TechnoCard key={`card ${index}`} title={card.title} text={card.text} anim={animation} delay={delay + index/10} />
+            {competenceData.map((competence, index) => {
+                        console.log(competence)
+                        return <TechnoCard competence={competence} delay={delay + index/10} anim={animation} />  
                     })}
-                </div>
+               {/*   <div className="techno_content" >
+                    {competenceData.map((card, index) => {
+                         setDelay(delay + 0.1) 
+                        return <TechnoCard key={`card ${index}`} title={card.title} text={card.text} anim={animation} delay={delay + index/10} />
+                    })}  
+                   
+                </div>*/}
             </div>
         </div>
     );

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Button from "../Burger_button/Burger_button";
 import { useContext } from "react";
 import { modalContext } from "../Header/Header";
@@ -20,10 +19,11 @@ const Modal_nav = () => {
         <>
          <div className="modal" style={{display: isOpenValue ? "flex" : 'none'}}>
             <div className="modal_nav">
+                <h4 className="modal_title">Kenuhn Rimbert / étudiant développeur</h4>
                 <ul className="nav_list">
-                <Link to="" onClick={handleClick}> <li className="nav_item" > Acceuil </li></Link>
-                <Link to="" onClick={handleClick}>  <li className="nav_item">Mon CV</li></Link>
-                <Link to="" onClick={handleClick}>  <li className="nav_item">Me contacter</li></Link>
+                <a href="#welcome" onClick={handleClick}> <li className="nav_item" > ACCUEIL </li></a>
+                <a href="#curriculum" onClick={handleClick}>  <li className="nav_item">CURRICULUM</li></a>
+                <a href="#contact" onClick={handleClick}>  <li className="nav_item">CONTACTER</li></a>
                 </ul>
             </div>
             

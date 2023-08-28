@@ -20,7 +20,7 @@ const Header: React.FC = () => {
     < modalContext.Provider value={{isOpen, setIsOpen}}>
       <header className="header">
         <div className="header_contenant">
-       <Link to={"/"} style={{color: "#280a0b"}}> <h1 >KR</h1></Link>
+       <Link to={"/"} style={{color: "#280a0b"}}> <h1 className="header_title">KR</h1></Link>
           < Modal_nav />
         </div>
        

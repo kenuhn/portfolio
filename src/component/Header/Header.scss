@@ -1,4 +1,4 @@
-.header{
+.header { 
     width: 100%;
     position: fixed;
     display: flex;
@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     z-index: 150;
+    
 
     &_contenant {
         height: 100px;
@@ -13,7 +14,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
+       
+    }
+
+    &_title {
+        color: black;
     }
  
 }

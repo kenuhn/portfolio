@@ -3,19 +3,26 @@ import {Routes, Route } from "react-router-dom"
 import Homepage from './pages/Homepage' 
 import Projects from "./pages/Projects"
 
+
 function App() {
+
+
+
   return (
-    <>
-    <div className="App">
+   <div className="App">
+ 
+     
       <Header /> 
       <Routes >
             <Route path="/" element={ <Homepage/>} />
             <Route path="/projet/:id" element={<Projects/>} />
 
       </Routes>
-
-    </div>
-    </>
+      
+    
+</div>
+ 
+    
   )
 }
 

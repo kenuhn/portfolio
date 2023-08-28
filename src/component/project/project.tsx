@@ -8,9 +8,9 @@ const Projects = () => {
 
     return (
         <>
-            <div className="project_wrapper" >
+            <section className="project_wrapper" id="project_wrapper">
                 <div className="project_content">
-                    <img src={project?.imgProject}/* {`${project?.imgProject}`} */ alt="" className="project_slider" />
+                  <div className="project_slider" ><img src={project?.imgProject}alt="" /></div>  
                     <div className="project_body">
                         <h4 className="project_body_title">{project?.name}</h4>
                         <div className="project_body_description">{project?.description}</div>
@@ -26,17 +26,15 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className="project_footer">
-                            <h4 className="project_footer_title"> La maquette du projet</h4>
-
+                        <h4 className="project_footer_title"> La maquette du projet</h4>
                         {project?.listImg?.map((img, index) => {
-                         return <img src={img} alt="" className="project_img" key={"photo" + index} style={{width: "700px", height: "500px"}}/>
+                         return <div className="project_img"><img src={img} alt=""  key={"photo" + index} /></div> 
                         })}
-
                     </div>
 
                 </div>
 
-            </div>
+            </section>
 
         </>
     );
