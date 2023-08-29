@@ -21,9 +21,9 @@ const Modal_nav = () => {
             <div className="modal_nav">
                 <h4 className="modal_title">Kenuhn Rimbert / étudiant développeur</h4>
                 <ul className="nav_list">
-                <a href="#welcome" onClick={handleClick}> <li className="nav_item" > ACCUEIL </li></a>
-                <a href="#curriculum" onClick={handleClick}>  <li className="nav_item">CURRICULUM</li></a>
-                <a href="#contact" onClick={handleClick}>  <li className="nav_item">CONTACTER</li></a>
+                <a href="/#welcome" onClick={handleClick}> <li className="nav_item" > ACCUEIL </li></a>
+                <a href="/#curriculum" onClick={handleClick}>  <li className="nav_item">CURRICULUM</li></a>
+                <a href="/#contact" onClick={handleClick}>  <li className="nav_item">CONTACTER</li></a>
                 </ul>
             </div>
             
