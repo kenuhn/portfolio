@@ -1,49 +1,49 @@
-[
+ [
       {
         "id": 1,
         "name": "Tetris",
         "description": "POO et matrice avec TETRIS",
-        "imgProject": "../public/img/project/tetris/tetris_logo.png",
+        "imgProject": "../img/project/tetris/tetris_logo.png",
         "year": 2022,
         "techno": ["javascript, canvas"],
-        "listImg": ["../public/img/project/tetris/tetris_interface.png"]
+        "listImg": ["../img/project/tetris/tetris_interface.png"]
       },
       {
         "id": 2,
         "name": "Snake",
         "description": "Structure de donnée file avec Snake",
-        "imgProject": "../public/img/project/snake/snake_logo.jpg",
+        "imgProject": "../img/project/snake/snake_logo.jpg",
         "year": 2022,
         "techno": ["javascript, canvas"],
-        "listImg": ["../public/img/project/snake/Interface_snake.png"]
+        "listImg": ["../img/project/snake/Interface_snake.png"]
       },
       {
         "id": 3,
         "name": "Réseau social",
         "description": "Création d'un réseau social de A à Z",
-        "imgProject": "../public/img/project/groupomania-banner.webp",
+        "imgProject": "../img/project/groupomania-banner.webp",
         "year": 2022,
         "techno": ["React", "Node.js", "Prisma ORM"],
-        "listImg": ["../public/img/project/FishEye/FishEye_home.png", "../public/img/project/FishEye/FishEye_list.png", "../public/img/project/FishEye/FishEye_modal.png","../public/img/project/FishEye/FisheEye_component.png"]
+        "listImg": ["../img/project/FishEye/FishEye_home.png", "../img/project/FishEye/FishEye_list.png", "../img/project/FishEye/FishEye_modal.png","../img/project/FishEye/FisheEye_component.png"]
       },
       {
         "id": 4,
         "name": "Data visualisation",
         "description": "Mise en place interface de visualisation de donnée avec react et D3.js",
-        "imgProject": "  ../public/img/project/sportSee_logo.png",
+        "imgProject": "  ../img/project/sportSee_logo.png",
         "year": 2022,
         "techno": ["D3.js", "React", "Docker"],
-        "listImg": ["../public/img/project/SportSee/SportSee_Kanban.png", "../public/img/project/SportSee/SportSee_home.png" ]
+        "listImg": ["../img/project/SportSee/SportSee_Kanban.png", "../img/project/SportSee/SportSee_home.png" ]
       },
     
       {
         "id": 5,
         "name": "Front-end",
         "description": "A platform for users to connect and share content.",
-        "imgProject": "../public/img/project/fishEye.png",
+        "imgProject": "../img/project/fishEye.png",
         "year": 2020,
         "techno": ["Angular", "Express", "PostgreSQL"],
-        "listImg": ["../public/img/project/FishEye/FishEye_home.png", "../public/img/project/FishEye/FishEye_list.png", "../public/img/project/FishEye/FishEye_modal.png","../public/img/project/FishEye/FisheEye_component.png"]
+        "listImg": ["../img/project/FishEye/FishEye_home.png", "../img/project/FishEye/FishEye_list.png", "../img/project/FishEye/FishEye_modal.png","../img/project/FishEye/FisheEye_component.png"]
      
 
       },
@@ -51,10 +51,10 @@
         "id": 6,
         "name": "tests unitaires",
         "description": "Correction des bugs dans une plateforme de note de frais sur deux axes: Un axe employé, Un axe administrateur ",
-        "imgProject": "../public/img/project/Billed/Billed_logo.png",
+        "imgProject": "../img/project/Billed/Billed_logo.png",
         "year": 2020,
         "techno": ["Angular", "Express", "PostgreSQL"],
-        "listImg": ["../public/img/project/Billed/Billed_interface.png", "../public/img/project/Billed/Billed_test1.png", "../public/img/project/Billed/Billed_test2.png","../public/img/project/Billed/Billed_test3.png"]
+        "listImg": ["../img/project/Billed/Billed_interface.png", "../img/project/Billed/Billed_test1.png", "../img/project/Billed/Billed_test2.png","../img/project/Billed/Billed_test3.png"]
      
 
       },
@@ -62,10 +62,10 @@
         "id": 7,
         "name": "Backend",
         "description": "Dans ce projet je devais implémenter toute la partie back-end d'une application de création de sauce. Les grands axes d'apprentissages de ces projets sont:  Apprentissage de nodeJs, Comprendre ce qu'est une api Rest, gestion des fichier avec multer, gestion des likes.",
-        "imgProject": "../public/img/project/piquante/piquante_logo.png",
+        "imgProject": "../img/project/piquante/piquante_logo.png",
         "year": 2020,
         "techno": ["Angular", "Express", "PostgreSQL"],
-        "listImg": ["../public/img/project/piquante/accueil-piquante.jpg", "../public/img/project/piquante/post-piquante.jpg", "../public/img/project/piquante/produit-piquante.jpg"]
+        "listImg": ["../img/project/piquante/accueil-piquante.jpg", "../img/project/piquante/post-piquante.jpg", "../img/project/piquante/produit-piquante.jpg"]
      
 
       }

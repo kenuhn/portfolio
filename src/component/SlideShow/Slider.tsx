@@ -4,7 +4,7 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import data from "../../../data/data.json"
+import data from "../../../public/data/data.json"
 
 // import required modules
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';

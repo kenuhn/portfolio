@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import projects from '../../data/data.json'
+import projects from '../../public/data/data.json'
 
 const searchProject = () => {
    const { id } = useParams()
