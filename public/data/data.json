@@ -30,7 +30,7 @@
         "id": 4,
         "name": "Data visualisation",
         "description": "Mise en place interface de visualisation de donnée avec react et D3.js",
-        "imgProject": "  ../img/project/sportSee_logo.png",
+        "imgProject": "../img/project/sportSee_logo.png",
         "year": 2022,
         "techno": ["D3.js", "React", "Docker"],
         "listImg": ["../img/project/SportSee/SportSee_Kanban.png", "../img/project/SportSee/SportSee_home.png" ]
@@ -40,7 +40,7 @@
         "id": 5,
         "name": "Front-end",
         "description": "A platform for users to connect and share content.",
-        "imgProject": "../img/project/fishEye.png",
+        "imgProject": "../img/project/FishEye.png",
         "year": 2020,
         "techno": ["Angular", "Express", "PostgreSQL"],
         "listImg": ["../img/project/FishEye/FishEye_home.png", "../img/project/FishEye/FishEye_list.png", "../img/project/FishEye/FishEye_modal.png","../img/project/FishEye/FisheEye_component.png"]
