@@ -26,8 +26,6 @@ const Modal_nav = () => {
                 <a href="/#contact" onClick={handleClick}>  <li className="nav_item">CONTACTER</li></a>
                 </ul>
             </div>
-            
-            
         </div>
         < Button />
         </>
