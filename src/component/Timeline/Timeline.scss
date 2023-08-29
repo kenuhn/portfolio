@@ -55,34 +55,6 @@ $red: #280a0b ;
 }
 
 
-/* .section_timeline_contenant::before  {
-  position: relative;
-  display: block;
-  content:'';
-  width: 25px;
-  height:  25px;
-  top: 0px;
-  right: 25px;
-  border-top: 2px solid black ;
-  border-left: 2px solid black ;
-  border-radius: 5px;
-}
-
-.section_timeline_contenant::after  {
-  position: relative;
-  display: block;
-  content:'';
-  width: 25px;
-  height: 25px;
-  top: -35px;
-  left: 1025px;
-  border-bottom: 2px solid black;
-  border-right: 2px solid black ;
-  border-radius: 5px;
-  
-} 
- */
-
 /* -------------------------------------
  * timeline
  * ------------------------------------- */
@@ -366,7 +338,10 @@ $red: #280a0b ;
     }
 }  
 
-@media screen and (max-width: 410px) { 
+@media screen and (max-width: 450px) { 
+  .section_timeline {
+    height: 110vh;
+  }
 
   #timeline {
     label {
@@ -375,6 +350,7 @@ $red: #280a0b ;
   }
 
   .section_timeline_title{
-    font-size: 35px;
+    height: fit-content;
+    margin-bottom: 50px;
   }
 }

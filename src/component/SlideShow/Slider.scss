@@ -81,14 +81,24 @@
 }
 
 @media screen and (max-width: 450px) {
+     .swiper_contenant {
+          height: 100vh;
+           width: 100%; 
+          display: flex; 
+          flex-flow: column wrap;
+          justify-content: start;
+          align-items: center; 
+          margin: 0;
+        }  
+     
+     .swiper_contenant{
+          height: 110vh;
+     }
      .swiper_container {
           width: 400px;
           margin: 0;
      }
-}
-
-@media screen and (max-width: 410px) {
      .slider_title {
-          font-size: 35px;
+          margin: 100px 0 50px 0;
      }
 }
