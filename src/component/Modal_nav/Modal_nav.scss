@@ -117,6 +117,8 @@
 	transform: scale(1);
 }
   
-/* @media screen and (max-width: ){
-  
-} */
+@media screen and (max-width: 550px) {
+  .nav_list {
+    font-size: 60px
+  }
+}
