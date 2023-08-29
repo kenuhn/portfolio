@@ -30,7 +30,7 @@
         "id": 4,
         "name": "Data visualisation",
         "description": "Mise en place interface de visualisation de donnée avec react et D3.js",
-        "imgProject": "../img/project/sportSee_logo.png",
+        "imgProject": "../img/project/SportSee_logo.png",
         "year": 2022,
         "techno": ["D3.js", "React", "Docker"],
         "listImg": ["../img/project/SportSee/SportSee_Kanban.png", "../img/project/SportSee/SportSee_home.png" ]
