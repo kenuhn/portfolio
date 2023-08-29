@@ -1,5 +1,4 @@
 import Button from "../Button/Button";
-import { FaFolder, FaGithub } from "react-icons/fa6";
 import Tag from "../Tag/Tag";
 type Props = {
     titre: string;
