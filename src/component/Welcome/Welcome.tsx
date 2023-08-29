@@ -51,8 +51,8 @@ const Welcome = () => {
              <ul className="presentation_link">
             <li className="presentation_link_item"><a href="#curriculum"> <FaArrowRight style={{marginRight: '10px', fontSize: '15px'}}/> Mon Parcours</a></li>
            
-              <li className="presentation_link_item"><a href="#projects"> <FaArrowRight style={{marginRight: '10px', fontSize: '15px'}}/> Mes projets</a></li>
-              <li className="presentation_link_item"><a href="#contact"> <FaArrowRight style={{marginRight: '10px', fontSize: '15px'}}/> Contactez-moi</a></li>
+              <li className="presentation_link_item"><a href="#projects"> <FaArrowRight style={{marginRight: '10px', fontSize: '15px'}}/> Mes Projets</a></li>
+              <li className="presentation_link_item"><a href="#contact"> <FaArrowRight style={{marginRight: '10px', fontSize: '15px'}}/>Contacter</a></li>
             </ul>
  
         </div>

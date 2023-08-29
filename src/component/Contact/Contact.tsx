@@ -32,7 +32,7 @@ const Contact = () => {
 
     return (
         <section className="contact" id="contact" ref={ref}>
-             <h4 className="contact_title"> ÉCHANGONS  </h4>
+             <h4 className="contact_title"> Contacter </h4>
             <div className="contact_content">
 
              <div className="contact_left"> 
