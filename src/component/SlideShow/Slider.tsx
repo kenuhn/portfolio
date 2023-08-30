@@ -47,7 +47,7 @@ const Slider = () => {
                 {projects.map((project) => {
                     return (
                         <SwiperSlide key={project.name} className="card_content" >
-                            <Card key={project.name} onClickProps={handleClick} titre={project.name} img={project.imgProject} description={project.description} id={project.id} tags={project.techno} year={project.year}/>
+                            <Card key={project.name} onClickProps={handleClick} titre={project.name} img={project.imgProject} description={project.descriptionCard} id={project.id} tags={project.techno} year={project.year}/>
                         </SwiperSlide>
                     )
                 })}

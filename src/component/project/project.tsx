@@ -1,10 +1,9 @@
 import searchProject from "../../utils/searchProject";
 import Tag from "../Tag/Tag";
-
+import { FaGithub } from "react-icons/fa6";
 
 const Projects = () => {
     const project = searchProject()
-    console.log(project?.listImg)
 
     return (
         <>
@@ -31,9 +30,9 @@ const Projects = () => {
                          return <div className="project_img"><img src={img} alt=""  key={"photo" + index} /></div> 
                         })}
                     </div>
-
+                       
                 </div>
-
+                <div className="project_link"><a href={project?.["lien-github"]}><FaGithub /></a></div>
             </section>
 
         </>

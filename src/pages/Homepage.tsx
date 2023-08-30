@@ -5,7 +5,6 @@ import Techno from "../component/Techno/Techno";
 import Contact from "../component/Contact/Contact";
 import React, { useEffect, useRef, useState } from "react";
 
-
 export function useOneScreen(ref: React.RefObject<any>) {
     const [isIntersecting, setIntersecting] = useState<Boolean>(false)
 

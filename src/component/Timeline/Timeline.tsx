@@ -35,8 +35,8 @@ const Timeline = () => {
                             <div className='content'>
                                 <p className="content_text">
                                     Bac +3 avec openclassroom: Dans cette formation j'ai pu approffondir mes connaissances sur reactJS, 
-                                    typescript, mais aussi sur la visualisation de donnée et la mise en place de test unitaire. 
-                                    De plus, j'ai étudié les fondamentaux en terme d'algorithmie et de structure de donnée.
+                                    typescript, mais aussi sur la visualisation de donnée et la mise en place de tests unitaires. 
+                                    De plus, j'ai étudié les fondamentaux en terme d'algorithmie et de structures de données.
                                 </p>
                             </div>
                         </li>
@@ -51,7 +51,7 @@ const Timeline = () => {
                             <div className='content'>
                                 <p className="content_text">
                                     Bac +2 avec openclassroom: Dans cette formation j'ai appris les fondamentaux du dévelopement web, 
-                                    en travaillant avec des langages tels que javascript node JS avec expressJS, 
+                                    en travaillant avec des langages tels que javascript, node JS avec expressJS, 
                                     J'ai étudier différents types de bases de données comme MongoDB ou mysSQL.
                                 </p>
                             </div>
