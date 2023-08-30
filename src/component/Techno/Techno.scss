@@ -65,6 +65,12 @@
     .techno{
         width: 70%;
     }
+    .competence_title {
+        text-align: center;
+        font-size: 40px;
+        margin: 0 0 20px 0;
+        width: calc(100% - 50px);
+    }
 }
 
 @media screen and (max-width: 410px) {

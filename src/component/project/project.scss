@@ -200,12 +200,17 @@
 
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 789px) {
     .project {
         &_link {
             font-size: 60px;
             right: 25px;
             bottom: 25px;
+        }
+        &_body {
+            &_description {
+                font-size: small;
+            }
         }
     }
 
