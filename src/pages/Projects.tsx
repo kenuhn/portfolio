@@ -1,9 +1,9 @@
 
 import ProjectsComponent from "../component/project/project.tsx";
-const Projects = () => {
+ const Projects = () => {
     return (
         <>
-         <ProjectsComponent />
+            <ProjectsComponent />
         </>
     );
 };

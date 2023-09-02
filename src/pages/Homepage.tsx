@@ -4,8 +4,8 @@ import Slider from "../component/SlideShow/Slider";
 import Techno from "../component/Techno/Techno";
 import Contact from "../component/Contact/Contact";
 import React, { useEffect, useRef, useState } from "react";
-
-export function useOneScreen(ref: React.RefObject<any>) {
+import {  useLocation } from "react-router-dom";
+ export function useOneScreen(ref: React.RefObject<any>) {
     const [isIntersecting, setIntersecting] = useState<Boolean>(false)
 
     const observer = new IntersectionObserver(([entry]) => {
@@ -23,22 +23,25 @@ export function useOneScreen(ref: React.RefObject<any>) {
     return isIntersecting
 
 
-}
+} 
 
 const Homepage = () => {
-
-    const ref = useRef<HTMLDivElement>(null)
-    const isVisible = useOneScreen(ref)
-
+   const ref = useRef<HTMLDivElement>(null)
+    const location = useLocation()
     useEffect(() => {
-        if (isVisible) {
-            console.log("cela a marché")
+        if(location.hash) {
+            const hash = location.hash.slice(1)
+           const hashEl= document.getElementById(hash)
+           hashEl?.scrollIntoView()
+
         }
-    }, [isVisible])
+    }, [location]) 
 
     return (
         <>
-            <div ref={ref} id="container_test">
+       
+            <div ref={ref}  id="container_test">
+            
                 <Welcome />
                 <Techno />
                 <Timeline />

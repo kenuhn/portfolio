@@ -20,7 +20,7 @@ const Timeline = () => {
                             <div className='content'>
                                 <p className="content_text">
                                     Master avec IPSSI : Durant les deux prochaines années je vais étudier les outils, les langages
-                                    et les concepts d'architecture nécessaire à la mise en place d'infrastrucre big data. 
+                                    et les concepts d'architecture nécessaire à la mise en place d'infrastructure big data. 
                                 </p>
                             </div>
                         </li>
@@ -52,15 +52,10 @@ const Timeline = () => {
                                 <p className="content_text">
                                     Bac +2 avec openclassroom: Dans cette formation j'ai appris les fondamentaux du dévelopement web, 
                                     en travaillant avec des langages tels que javascript, node JS avec expressJS, 
-                                    J'ai étudier différents types de bases de données comme MongoDB ou mysSQL.
+                                    J'ai étudié différents types SGBD comme MongoDB ou mysSQL.
                                 </p>
                             </div>
                         </li>
-
-
-
-
-
                     </ul>
                 </div>
             </section>

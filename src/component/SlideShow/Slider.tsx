@@ -8,18 +8,10 @@ import data from "../../../public/data/data.json"
 
 // import required modules
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
-import { useState } from 'react'
+
 
 const Slider = () => {
-    const projects = data
-    console.log(projects)
-    const [modalOpen, setModalOpen] = useState<Boolean>(false)
-    function handleClick(): void {
-        if (modalOpen === false) console.log(setModalOpen(true))
-        else setModalOpen(false)
-    }
-
-
+const projects = data
 
     return (
         <section className="swiper_contenant" id="projects" >
@@ -47,7 +39,7 @@ const Slider = () => {
                 {projects.map((project) => {
                     return (
                         <SwiperSlide key={project.name} className="card_content" >
-                            <Card key={project.name} onClickProps={handleClick} titre={project.name} img={project.imgProject} description={project.descriptionCard} id={project.id} tags={project.techno} year={project.year}/>
+                            <Card key={project.name} titre={project.name} img={project.imgProject} description={project.descriptionCard} id={project.id} tags={project.techno} year={project.year}/>
                         </SwiperSlide>
                     )
                 })}

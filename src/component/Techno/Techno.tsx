@@ -46,21 +46,12 @@ const Techno = () => {
      useEffect(() => {
 
         if (isVisible) {
-            console.log(isVisible)
-           /*  const handleScroll = () => { */
                 if (animation === "") {
                     setAnimation("animated")
                 } 
-          /*   }; */
         } else {
             setAnimation("")
         }
-    /* 
-        window.addEventListener('scroll', handleScroll)
-
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        }; */
 
     }, [isVisible])
 
@@ -78,8 +69,7 @@ const Techno = () => {
                 </p>
             <div className="techno">
             {competenceData.map((competence, index) => {
-                        console.log(competence)
-                        return <TechnoCard competence={competence} delay={delay + index/10} anim={animation} />  
+                        return <TechnoCard key={`techno,${index}`} competence={competence} delay={delay + index/10} anim={animation} />  
                     })}
                {/*   <div className="techno_content" >
                     {competenceData.map((card, index) => {

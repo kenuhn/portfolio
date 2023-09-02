@@ -4,36 +4,26 @@ type Props = {
     titre: string;
     description: string;
     img: string;
-    onClickProps: () => void;
     id: number;
     tags: string[];
     year: number;
 
 }
-const Card = ({ titre, img, onClickProps, id, description, tags, year }: Props) => {
+const Card = ({ titre, img,  id, description, tags, year }: Props) => {
 
-    console.log(tags)
- {
-       
-    }
     return (
         <div className="card">
-            {/*      <div className="card_header" >
-                <FaFolder />
-                <FaGithub />
-            </div> */}
             <h4 className="card_title">{titre}</h4>
             <div className="card_img"><img src={`${img}`} alt="" /></div>
             <p className="card_text" >{description}</p>
             <div className="card_tag">
-                {tags.map((tag) => {
+                {tags.map((tag, index) => {
                     return (
-                         < Tag text={tag} />
+                        < Tag key={`${tag}${index}`} text={tag} />
                     )
-                   
-                    })}</div>
+                })}</div>
             <div className="card_date">{year}</div>
-            <div className="card_button" onClick={onClickProps}>
+            <div className="card_button" >
                 <Button text="Voir projets" classname="button card_button" id={id} />
             </div>
 

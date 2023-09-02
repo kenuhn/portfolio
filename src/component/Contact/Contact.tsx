@@ -21,9 +21,6 @@ const Contact = () => {
       // Initialisation de la largeur
       handleResize();
   
-      // Ajout de l'écouteur d'événement de redimensionnement
-      window.addEventListener('resize', handleResize);
-  
       // Nettoyage de l'écouteur d'événement
       return () => {
         window.removeEventListener('resize', handleResize);

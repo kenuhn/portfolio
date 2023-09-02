@@ -27,7 +27,7 @@ const Projects = () => {
                     <div className="project_footer">
                         <h4 className="project_footer_title"> La maquette du projet</h4>
                         {project?.listImg?.map((img, index) => {
-                         return <div className="project_img"><img src={img} alt=""  key={"photo" + index} /></div> 
+                         return <div className="project_img" key={"photo" + index} ><img src={img} alt=""  /></div> 
                         })}
                     </div>
                        
