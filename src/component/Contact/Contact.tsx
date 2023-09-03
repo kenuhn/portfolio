@@ -35,7 +35,7 @@ const Contact = () => {
              <div className="contact_left"> 
                  <h4  className="contact_left_title"> Bonjour,</h4>
                 <p className="contact_text"> Étant en recherche d'une alternance de deux ans dans
-                    le cadre de mon master en Dévelopement Data et IA débutant en octobre 2023. 
+                    le cadre de mon master en Développement Data et IA débutant en octobre 2023. 
                     Je suis disponible pour un premier échange depuis ces coordonnées.
                 </p>
 

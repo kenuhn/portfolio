@@ -13,7 +13,7 @@ const Timeline = () => {
                         <li className="work ">
                             <input className='radio' id='work5' name='works' type='radio'  defaultChecked={true}/>
                             <div className='relative'>
-                                <label htmlFor='work5' className="work_title">Master Dévolepement Data et IA </label>
+                                <label htmlFor='work5' className="work_title">Master Développement Data et IA </label>
                                 <span className='date'>2023/2025</span>
                                 <span className='circle'></span>
                             </div>
@@ -34,8 +34,8 @@ const Timeline = () => {
                             </div>
                             <div className='content'>
                                 <p className="content_text">
-                                    Bac +3 avec openclassroom: Dans cette formation j'ai pu approffondir mes connaissances sur reactJS, 
-                                    typescript, mais aussi sur la visualisation de donnée et la mise en place de tests unitaires. 
+                                    Bac +3 avec openclassroom: Dans cette formation j'ai pu approfondir mes connaissances sur reactJS, 
+                                    typescript, mais aussi sur la visualisation de données et la mise en place de tests unitaires. 
                                     De plus, j'ai étudié les fondamentaux en terme d'algorithmie et de structures de données.
                                 </p>
                             </div>
