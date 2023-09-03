@@ -24,7 +24,7 @@ const Card = ({ titre, img,  id, description, tags, year }: Props) => {
                 })}</div>
             <div className="card_date">{year}</div>
             <div className="card_button" >
-                <Button text="Voir projets" classname="button card_button" id={id} />
+                <Button text="Voir projet" classname="button card_button" id={id} />
             </div>
 
         </div>
