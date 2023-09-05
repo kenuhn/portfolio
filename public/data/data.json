@@ -8,7 +8,7 @@
         "lien-github": "https://github.com/kenuhn/projet_tetris",
 
         "year": 2022,
-        "techno": ["javascript, canvas"],
+        "techno": ["javascript", "canvas"],
         "listImg": ["../img/project/tetris/tetris_interface.png"]
       },
       {
@@ -19,18 +19,18 @@
         "imgProject": "../img/project/snake/snake_logo.jpg",
         "lien-github": "https://github.com/kenuhn/projet_Perso_Snake",
         "year": 2022,
-        "techno": ["javascript, canvas"],
+        "techno": ["javascript", "canvas"],
         "listImg": ["../img/project/snake/Interface_snake.png"]
       },
       {
         "id": 3,
         "name": "Réseau social",
         "descriptionCard": "Création d'un réseau social d'entrprise'",
-        "description": "Création d'un reseau social d'entreprise dans lequel on peut créer un compte, le supprimer, se connecter et se déconnecter, importer une photo de profil ou la changer, publier des posts avec des médias images ou vidéos. suprimer son post,liker les posts d'autres utilisateurs ,Créer un compte administrateur capable de modérer le réseau social ",
+        "description": " Ce projet permet de créer un compte, le supprimer, se connecter et se déconnecter, modifier son compte, publier des posts. suprimer son post,liker les posts d'autres utilisateurs, Créer un compte administrateur ",
         "imgProject": "../img/project/groupomania-banner.webp",
         "lien-github": "https://github.com/kenuhn/projet-6-groupomania-reseau-social-fullstack",
         "year": 2022,
-        "techno": ["React", "Node.js", "Prisma ORM"],
+        "techno": ["React", "Node.js", "Prisma"],
         "listImg": ["../img/project/FishEye/FishEye_home.png", "../img/project/FishEye/FishEye_list.png", "../img/project/FishEye/FishEye_modal.png","../img/project/FishEye/FisheEye_component.png"]
       },
       {
@@ -55,7 +55,6 @@
         "year": 2020,
         "techno": ["vanilla.JS", "html", "css"],
         "listImg": ["../img/project/FishEye/FishEye_home.png", "../img/project/FishEye/FishEye_list.png", "../img/project/FishEye/FishEye_modal.png","../img/project/FishEye/FisheEye_component.png"]
-     
 
       },
       {
