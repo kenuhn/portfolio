@@ -3,353 +3,231 @@
  * For horizontal version, set the
  * $vertical variable to false
  * ------------------------------------- */
-  $vertical: true;
- 
 /* -------------------------------------
  * General Style
  * ------------------------------------- */
-
-// Colours
- $white: #280a0b ;
-$bg: /*  #eef5e6 */   #eee7e1  /* #fff8ed *//*  #fff8ed */; //fff8ed
-$red: #280a0b ;
+/*  #eef5e6 */
 /* background-color: #f8f1e53e; */
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
-
 .section_timeline {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    background-color: $bg; 
-    margin: 20px 0 0 0 ;
-    &_title {
-      
-        text-align: center;
-        font-size: 40px;
-        width: 100%;
-        height: 40px;
-        margin: 0px 0 100px 0 ; 
-    }
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #eee7e1;
+  margin: 20px 0 0 0;
+}
+.section_timeline_title {
+  text-align: center;
+  font-size: 40px;
+  width: 100%;
+  height: 40px;
+  margin: 0px 0 100px 0;
 }
 .section_timeline_contenant {
-  @if $vertical {
-    margin:0  0 25px 0 ;
-    width: 1000px;
-    /* width: 1000px; */
- /*    border: thick double black;  
-    border-radius: 20px;
-    box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.27); */
-  } @else {
-    margin: 0;
-   
-  }
-   padding: 0 5%;
+  margin: 0 0 25px 0;
+  width: 1000px;
+  /* width: 1000px; */
+  /*    border: thick double black;  
+   border-radius: 20px;
+   box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.27); */
+  padding: 0 5%;
   font-size: 100%;
-/*   font-family: 'Noto Sans', sans-serif; */
-  color: $white;
-  background: $bg;
-
+  /*   font-family: 'Noto Sans', sans-serif; */
+  color: #280a0b;
+  background: #eee7e1;
 }
-
-
 /* -------------------------------------
  * timeline
  * ------------------------------------- */
-
- // UL
- #timeline {
-   list-style: none; 
-  @if $vertical {
-    margin: 50px 0 30px 120px;
-    padding-left: 30px;
-    border-left: 6px double $white ;
-  } @else {
-    margin: 120px 0 0;
-    padding: 0;
-    border-top: 8px solid $white;
-    display: table;
-    border-spacing: 30px 0;
-  }
-  // LI 
-  .work {
-    @if $vertical {
-      margin: 40px 0;
-      position: relative;
-    } @else {
-      display: table-cell;
-      // for Firefox
-      .relative {
-        position: relative;
-      }
-    }
-    p {
-       margin: 0 0 50px;
-    }
-  }
-  //SPAN
-  .date {
-    @if $vertical {
-      margin-top: -10px;
-      top: 50%;
-      left: -158px;
-    } @else {
-      text-align: center;
-      top: -55px;
-      left: 0;
-      right: 0;
-    }
-    font-size: 0.95em;
-    line-height: 20px;
-    position: absolute;
-  }
-  .circle {
-    @if $vertical {
-      margin-top: -10px;
-      top: 50%;
-      left: -43px;
-    } @else {
-      margin: 0 auto;
-      top: -14px;
-      left: 0;
-      right: 0;
-    }
-    width: 10px;
-    height: 10px;
-    background: $bg;
-    border: 5px solid $white;
-   /*  border-radius: 50%;  */
-    display: block;
-    position: absolute;
-  }
-  .content {
-    @if $vertical {
-      max-height: 20px;
-      padding: 50px 20px 0;
-      border-color: transparent;
-      
-
-    } @else {
-      width: 200px;
-      max-height: 0;
-      margin-top: 40px;
-      vertical-align: top;
-      padding: 50px 15px 15px;
-      transition: width 0.4s linear, max-height 0.4s linear;
-    }
-    border-width: 2px;
-    border-style: double;
-    position: relative;
-      &:before, &:after {
-        content: "";
-        width: 0;
-        height: 0;
-        border: solid transparent;
-        position: absolute;
-        pointer-events: none;
-        @if $vertical {
-          right: 100%;
-        } @else {
-          bottom: 100%;
-        }
-      }
-      &:before {
-        @if $vertical {
-          border-right-color: inherit;
-          border-width: 20px;
-          top: 50%;
-          margin-top: -20px;
-        } @else {
-          border-bottom-color: inherit;
-          border-width: 15px;
-          left: 50%;
-          margin-left: -15px;
-        }
-      }
-      &:after {
-        @if $vertical {
-           border-right-color: $bg; 
-          background-color: #f8f1e53e; 
-          border-width: 0px;
-          top: 50%;
-          margin-top: -17px;
-        } @else {
-          border-bottom-color: $bg;
-          border-width: 12px;
-          left: 50%;
-          margin-left: -12px;
-        }
-      }
-      &_text {
-        max-height: 0;
-        color: black;
-        text-align: justify;
-        word-break: break-word;
-        hyphens: auto;
-        overflow: hidden;
-      }
-    }
-    label {
-      font-size: 1.3em;
-      position: absolute;
-      z-index: 100;
-      width: 100%;
-      font-weight: bold;
-      cursor: pointer;
-      @if $vertical {
-        top: 20px;
-        left: 50px;
-        transition: transform 0.2s linear;
-      } @else {
-        width: 200px;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        display: block;
-        top: 60px;
-        left: 15px;
-      }
-    }
-   .radio {
-      display: none;
-      &.radio:checked + .relative   {
-         label { 
-          cursor: auto;
-          @if $vertical {
-            transform: translateX(42px);
-          } @else {
-            width: 400px;
-            transition: width 0.3s linear 0.2s;
-          }
-         } 
-        .circle {
-          background: $red;
-        }
-        ~ .content {
-            max-height: 180px;
-            /*  
-              */ 
-             /*  
-               background-color: #f8f1e53e;   */
-               background-color:  #f8f3ee ; 
-              
-               border-color:   transparent  ;
-              /* border: none; */
-              box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); 
-            @if $vertical {
-              margin-right: 20px;
-              transform: translateX(20px);
-              transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
-            } @else {
-              width: 400px;
-            }
-            .content_text{
-              max-height: 200px;
-              color:  $white ;
-              transition: color 0.3s linear 0.3s;
-            }
-          } 
-      }
-     
-    } 
- } 
- .work_title {
+#timeline {
+  list-style: none;
+  margin: 50px 0 30px 120px;
+  padding-left: 30px;
+  border-left: 6px double #280a0b;
+}
+#timeline .work {
+  margin: 40px 0;
+  position: relative;
+}
+#timeline .work p {
+  margin: 0 0 50px;
+}
+#timeline .date {
+  margin-top: -10px;
+  top: 50%;
+  left: -158px;
+  font-size: 0.95em;
+  line-height: 20px;
+  position: absolute;
+}
+#timeline .circle {
+  margin-top: -10px;
+  top: 50%;
+  left: -43px;
+  width: 10px;
+  height: 10px;
+  background: #eee7e1;
+  border: 5px solid #280a0b;
+  /*  border-radius: 50%;  */
+  display: block;
+  position: absolute;
+}
+#timeline .content {
+  max-height: 20px;
+  padding: 50px 20px 0;
+  border-color: transparent;
+  border-width: 2px;
+  border-style: double;
+  position: relative;
+}
+#timeline .content:before, #timeline .content:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  position: absolute;
+  pointer-events: none;
+  right: 100%;
+}
+#timeline .content:before {
+  border-right-color: inherit;
+  border-width: 20px;
+  top: 50%;
+  margin-top: -20px;
+}
+#timeline .content:after {
+  border-right-color: #eee7e1;
+  background-color: #f8f1e53e;
+  border-width: 0px;
+  top: 50%;
+  margin-top: -17px;
+}
+#timeline .content_text {
+  max-height: 0;
+  color: black;
+  text-align: justify;
+  word-break: break-word;
+  hyphens: auto;
+  overflow: hidden;
+}
+#timeline label {
+  font-size: 1.3em;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  top: 20px;
+  left: 50px;
+  transition: transform 0.2s linear;
+}
+#timeline .radio {
+  display: none;
+}
+#timeline .radio.radio:checked + .relative label {
+  cursor: auto;
+  transform: translateX(42px);
+}
+#timeline .radio.radio:checked + .relative .circle {
+  background: #280a0b;
+}
+#timeline .radio.radio:checked + .relative ~ .content {
+  max-height: 180px;
+  /*  
+   */
+  /*  
+   background-color: #f8f1e53e;   */
+  background-color: #f8f3ee;
+  border-color: transparent;
+  /* border: none; */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  margin-right: 20px;
+  transform: translateX(20px);
+  transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
+}
+#timeline .radio.radio:checked + .relative ~ .content .content_text {
+  max-height: 200px;
+  color: #280a0b;
+  transition: color 0.3s linear 0.3s;
+}
+.work_title {
   left: 20px;
 }
 /* -------------------------------------
  * mobile phones (vertical version only)
  * ------------------------------------- */
- @if $vertical {
-  @media screen and (max-width: 767px) {
-
-    .section_timeline_contenant {
-      @if $vertical {
-        margin:0  0 25px 0 ;
-        width: fit-content;
-        
-      } @else {
-        margin: 0;
-       
-      }
-       padding: 0 5%;
-      font-size: 100%;
+@media screen and (max-width: 767px) {
+  .section_timeline_contenant {
+    margin: 0 0 25px 0;
+    width: fit-content;
+    padding: 0 5%;
+    font-size: 100%;
     /*   font-family: 'Noto Sans', sans-serif; */
-      color: $white;
-      background: $bg;
-    
-    }
-    #timeline {
-      margin: 50px 0 30px 0px;
-      padding-left: 30px;
-      border-left: 6px double $white ;
+    color: #280a0b;
+    background: #eee7e1;
+  }
+  #timeline {
+    margin: 50px 0 30px 0px;
+    padding-left: 30px;
+    border-left: 6px double #280a0b;
     /*   margin-left: 0;
-      padding-left: 0; */
-     /*  border-left: none; */
-      li {
-         margin: 50px 0; 
-      }
-      label {
-        width: fit-content;
-      left: 20px;
-        font-size: 1em;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        display: block;
-        transform: translateX(18px);
-       
-      }
-    }
- 
-   
-      
-      .content {
-        padding-top: 45px;
-        border-color: $white;
-        &:before, &:after {
-          border: solid transparent;
-          bottom: 100%;
-        }
-        &:before {
-          border-bottom-color: inherit;
-          border-width: 17px;
-          top: -16px;
-          left: 50px;
-          margin-left: -17px;
-        }
-        &:after {
-          border-bottom-color: $bg;
-          border-width: 20px;
-          top: -20px;
-          left: 50px;
-          margin-left: -20px;
-        }
-        p {
-          font-size: 0.9em;
-          line-height: 1.4;
-        }
-      }
-      
-      .circle, .date {
-        display: none;
-      }
-    }
-}  
-
-@media screen and (max-width: 450px) { 
+     padding-left: 0; */
+    /*  border-left: none; */
+  }
+  #timeline li {
+    margin: 50px 0;
+  }
+  #timeline label {
+    width: fit-content;
+    left: 20px;
+    font-size: 1em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    transform: translateX(18px);
+  }
+  .content {
+    padding-top: 45px;
+    border-color: #280a0b;
+  }
+  .content:before, .content:after {
+    border: solid transparent;
+    bottom: 100%;
+  }
+  .content:before {
+    border-bottom-color: inherit;
+    border-width: 17px;
+    top: -16px;
+    left: 50px;
+    margin-left: -17px;
+  }
+  .content:after {
+    border-bottom-color: #eee7e1;
+    border-width: 20px;
+    top: -20px;
+    left: 50px;
+    margin-left: -20px;
+  }
+  .content p {
+    font-size: 0.9em;
+    line-height: 1.4;
+  }
+  .circle, .date {
+    display: none;
+  }
+}
+@media screen and (max-width: 450px) {
   .section_timeline {
     height: 110vh;
   }
-
-  #timeline {
-    label {
+  #timeline label {
     left: 0px;
-    }
   }
-
-  .section_timeline_title{
+  .section_timeline_title {
     height: fit-content;
     margin-bottom: 50px;
   }

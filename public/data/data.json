@@ -1,86 +1,118 @@
- [
-      {
-        "id": 1,
-        "name": "Tetris",
-        "descriptionCard": "POO et matrice avec TETRIS",
-        "description": "Ce projet m'a permis de travailler la programmation orientée objet. J'ai également étudié la rotation des matrices binaires pour la rotation des tetriminos. ",
-        "imgProject": "../img/project/tetris/tetris_logo.png",
-        "lien-github": "https://github.com/kenuhn/projet_tetris",
+[
+  {
+    "id": 1,
+    "name": "Tetris",
+    "descriptionCard": "POO et matrice avec TETRIS",
+    "description": "Ce projet m'a permis de travailler la programmation orientée objet. J'ai également étudié la rotation des matrices binaires pour la rotation des tetriminos. ",
+    "imgProject": "../img/project/tetris/tetris_logo.png",
+    "lien-github": "https://github.com/kenuhn/projet_tetris",
 
-        "year": 2022,
-        "techno": ["javascript", "canvas"],
-        "listImg": ["../img/project/tetris/tetris_interface.png"]
-      },
-      {
-        "id": 2,
-        "name": "Snake",
-        "descriptionCard": "Structure de données file avec Snake",
-        "description": "Ce petit projet m'a permis de mettre en pratique la logique d'une file sur le sepent.",
-        "imgProject": "../img/project/snake/snake_logo.jpg",
-        "lien-github": "https://github.com/kenuhn/projet_Perso_Snake",
-        "year": 2022,
-        "techno": ["javascript", "canvas"],
-        "listImg": ["../img/project/snake/Interface_snake.png"]
-      },
-      {
-        "id": 3,
-        "name": "Réseau social",
-        "descriptionCard": "Création d'un réseau social d'entrprise'",
-        "description": " Ce projet permet de créer un compte, le supprimer, se connecter et se déconnecter, modifier son compte, publier des posts. suprimer son post,liker les posts d'autres utilisateurs, Créer un compte administrateur ",
-        "imgProject": "../img/project/groupomania-banner.webp",
-        "lien-github": "https://github.com/kenuhn/projet-6-groupomania-reseau-social-fullstack",
-        "year": 2022,
-        "techno": ["React", "Node.js", "Prisma"],
-        "listImg": ["../img/project/FishEye/FishEye_home.png", "../img/project/FishEye/FishEye_list.png", "../img/project/FishEye/FishEye_modal.png","../img/project/FishEye/FisheEye_component.png"]
-      },
-      {
-        "id": 4,
-        "name": "Data visualisation",
-        "descriptionCard": "Mise en place interface de visualisation de données avec react et D3.js",
-        "description": "Cette application react a été l'objet d'un travail sur les graphiques avec D3.js qui est une bibliothèque permettant de créer des svg plus ou moins complexes",
-        "imgProject": "../img/project/SportSee_logo.png",
-        "lien-github": "https://github.com/kenuhn/projet12_donnee_graphique",
-        "year": 2022,
-        "techno": ["D3.js", "React", "Docker"],
-        "listImg": ["../img/project/SportSee/SportSee_Kanban.png", "../img/project/SportSee/SportSee_home.png" ]
-      },
-    
-      {
-        "id": 5,
-        "name": "Front-end",
-        "descriptionCard": "Plateforme de photographie pour partager du contenu.",
-        "description": "Dans ce projet j'ai appris la gestion des appels api avec fetch et axios, a créer des petits algorithmes de tri ainsi que la conception d'un slider",
-        "imgProject": "../img/project/FishEye.png",
-        "lien-github": "",
-        "year": 2020,
-        "techno": ["vanilla.JS", "html", "css"],
-        "listImg": ["../img/project/FishEye/FishEye_home.png", "../img/project/FishEye/FishEye_list.png", "../img/project/FishEye/FishEye_modal.png","../img/project/FishEye/FisheEye_component.png"]
+    "year": 2023,
+    "techno": ["javascript", "canvas"],
+    "listImg": ["../img/project/tetris/tetris_interface.png"]
+  },
+  {
+    "id": 2,
+    "name": "Snake",
+    "descriptionCard": "Structure de données file avec Snake",
+    "description": "Ce petit projet m'a permis de mettre en pratique la logique d'une file sur le sepent.",
+    "imgProject": "../img/project/snake/snake_logo.jpg",
+    "lien-github": "https://github.com/kenuhn/projet_Perso_Snake",
+    "year": 2022,
+    "techno": ["javascript", "canvas"],
+    "listImg": ["../img/project/snake/Interface_snake.png"]
+  },
+  {
+    "id": 3,
+    "name": "Réseau social",
+    "descriptionCard": "Création d'un réseau social d'entrprise'",
+    "description": " Ce projet permet de créer un compte, le supprimer, se connecter et se déconnecter, modifier son compte, publier des posts. suprimer son post,liker les posts d'autres utilisateurs, Créer un compte administrateur ",
+    "imgProject": "../img/project/groupomania-banner.webp",
+    "lien-github": "https://github.com/kenuhn/projet-6-groupomania-reseau-social-fullstack",
+    "year": 2022,
+    "techno": ["React", "Node.js", "Prisma"],
+    "listImg": [
+      "../img/project/FishEye/FishEye_home.png",
+      "../img/project/FishEye/FishEye_list.png",
+      "../img/project/FishEye/FishEye_modal.png",
+      "../img/project/FishEye/FisheEye_component.png"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Data visualisation",
+    "descriptionCard": "Mise en place interface de visualisation de données avec react et D3.js",
+    "description": "Cette application react a été l'objet d'un travail sur les graphiques avec D3.js qui est une bibliothèque permettant de créer des svg plus ou moins complexes",
+    "imgProject": "../img/project/SportSee_logo.png",
+    "lien-github": "https://github.com/kenuhn/projet12_donnee_graphique",
+    "year": 2023,
+    "techno": ["D3.js", "React", "Docker"],
+    "listImg": [
+      "../img/project/SportSee/SportSee_Kanban.png",
+      "../img/project/SportSee/SportSee_home.png"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "machine virtuelle en C",
+    "descriptionCard": "Conception d'une VM et d'un interpreteur pour un proto-langage d'hexadécimal ",
+    "description": "La Chip8 est un interpréteur créé dans les années 1970, conçu initialement pour permettre aux ordinateurs de l'époque de facilement exécuter des jeux vidéo. Il s'agit plus précisément d'un ensemble simplifié d'instructions machine pour un processeur virtuel.",
+    "imgProject": "../img/project/chip8/brix.png",
+    "lien-github": "https://github.com/kenuhn/chip8_emulator/tree/main",
+    "year": 2024,
+    "techno": ["C", "SDL2"],
+    "listImg": [
+      "../img/project/chip8/2020-12-24-chip8-cpu-states.png",
+      "../img/project/chip8/FALCSSVKFPZ8BEY.webp"
+    ]
+  },
 
-      },
-      {
-        "id": 6,
-        "name": "tests unitaires",
-        "descriptionCard": "Correction des bugs dans une plateforme de note de frais sur deux axes: Un axe employé, Un axe administrateur ",
-        "description": "Correction des bugs dans une plateforme de note de frais sur deux axes: Un axe employé, Un axe administrateur ",
-        "imgProject": "../img/project/Billed/Billed_logo.png",
-        "lien-github": "https://github.com/kenuhn/projet-10-test_unitaire",
-        "year": 2020,
-        "techno": ["vanilla.JS", "Jest", "JSdoc"],
-        "listImg": ["../img/project/Billed/Billed_interface.png", "../img/project/Billed/Billed_test1.png", "../img/project/Billed/Billed_test2.png","../img/project/Billed/Billed_test3.png"]
-     
+  {
+    "id": 6,
+    "name": "tests unitaires",
+    "descriptionCard": "Correction des bugs dans une plateforme de note de frais sur deux axes: Un axe employé, Un axe administrateur ",
+    "description": "Correction des bugs dans une plateforme de note de frais sur deux axes: Un axe employé, Un axe administrateur ",
+    "imgProject": "../img/project/Billed/Billed_logo.png",
+    "lien-github": "https://github.com/kenuhn/projet-10-test_unitaire",
+    "year": 2023,
+    "techno": ["vanilla.JS", "Jest", "JSdoc"],
+    "listImg": [
+      "../img/project/Billed/Billed_interface.png",
+      "../img/project/Billed/Billed_test1.png",
+      "../img/project/Billed/Billed_test2.png",
+      "../img/project/Billed/Billed_test3.png"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Backend",
+    "descriptionCard": "Implémenter un backend avec nodejs et MongoDB ",
+    "description": "Dans ce projet je devais implémenter toute la partie back-end d'une application de création de sauce. Les grands axes d'apprentissages de ce projet sont:  Apprentissage de nodeJs, Comprendre ce qu'est une api Rest, gestion des fichier avec multer, gestion des likes.",
+    "imgProject": "../img/project/piquante/piquante_logo.png",
+    "lien-github": "https://github.com/kenuhn/projet-5-Piquante",
+    "year": 2022,
+    "techno": ["vanilla.JS", "Express", "Mongodb"],
+    "listImg": [
+      "../img/project/piquante/accueil-piquante.jpg",
+      "../img/project/piquante/post-piquante.jpg",
+      "../img/project/piquante/produit-piquante.jpg"
+    ]
+  },
 
-      },
-      {
-        "id": 7,
-        "name": "Backend",
-        "descriptionCard": "Implémenter un backend avec nodejs et MongoDB ",
-        "description": "Dans ce projet je devais implémenter toute la partie back-end d'une application de création de sauce. Les grands axes d'apprentissages de ce projet sont:  Apprentissage de nodeJs, Comprendre ce qu'est une api Rest, gestion des fichier avec multer, gestion des likes.",
-        "imgProject": "../img/project/piquante/piquante_logo.png",
-        "lien-github": "https://github.com/kenuhn/projet-5-Piquante",
-        "year": 2020,
-        "techno": ["Angular", "Express", "PostgreSQL"],
-        "listImg": ["../img/project/piquante/accueil-piquante.jpg", "../img/project/piquante/post-piquante.jpg", "../img/project/piquante/produit-piquante.jpg"]
-     
-
-      }
-  ]
+  {
+    "id": 8,
+    "name": "Front-end",
+    "descriptionCard": "Plateforme de photographie pour partager du contenu.",
+    "description": "Dans ce projet j'ai appris la gestion des appels api avec fetch et axios, a créer des petits algorithmes de tri ainsi que la conception d'un slider",
+    "imgProject": "../img/project/FishEye.png",
+    "lien-github": "",
+    "year": 2023,
+    "techno": ["vanilla.JS", "html", "css"],
+    "listImg": [
+      "../img/project/FishEye/FishEye_home.png",
+      "../img/project/FishEye/FishEye_list.png",
+      "../img/project/FishEye/FishEye_modal.png",
+      "../img/project/FishEye/FisheEye_component.png"
+    ]
+  }
+]
